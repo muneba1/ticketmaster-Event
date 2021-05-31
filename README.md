@@ -9,8 +9,8 @@ In this project we will build a event app using android architecture components
 ## App Features
 * Show list of events article
 * Endless scroll ( showing 20 events per page )
+* Favorite event
 
-## App Demo
 
 ## Library Used
 * [Live Data](https://developer.android.com/topic/libraries/architecture/livedata)
