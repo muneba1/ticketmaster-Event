@@ -59,7 +59,7 @@ class EventsDataSource(coroutineContext: CoroutineContext) : PageKeyedDataSource
                 }
 
             } catch (exception: Exception) {
-                Log.e("PostsDataSource", "Failed to fetch data!")
+                Log.e("Event DataSource", "Failed to fetch data!")
             }
         }
 
@@ -79,7 +79,7 @@ class EventsDataSource(coroutineContext: CoroutineContext) : PageKeyedDataSource
                 }
 
             } catch (exception: Exception) {
-                Log.e("PostsDataSource", "Failed to fetch data!")
+                Log.e("EventsDataSource", "Failed to fetch data!")
             }
         }
     }

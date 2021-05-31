@@ -30,15 +30,4 @@ class WishListFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_wish_list, container, false)
     }
 
-    companion object {
-
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            WishListFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
 }

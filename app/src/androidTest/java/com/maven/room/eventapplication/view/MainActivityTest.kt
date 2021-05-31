@@ -3,12 +3,9 @@ package com.maven.room.eventapplication.view
 
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.Espresso.pressBack
-import androidx.test.espresso.action.ViewActions.*
-import androidx.test.espresso.assertion.ViewAssertions.*
-import androidx.test.espresso.contrib.RecyclerViewActions.actionOnItemAtPosition
+import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.filters.LargeTest
 import androidx.test.rule.ActivityTestRule
@@ -33,28 +30,13 @@ class MainActivityTest {
 
     @Test
     fun mainActivityTest() {
-        val recyclerView = onView(
-            allOf(
-                withId(R.id.Event_RecyclerView_event_list),
-                childAtPosition(
-                    withClassName(`is`("android.widget.LinearLayout")),
-                    1
-                )
-            )
-        )
-        recyclerView.perform(actionOnItemAtPosition<ViewHolder>(5, click()))
-
-        pressBack()
-
-        pressBack()
-
         val appCompatImageView = onView(
             allOf(
                 withId(R.id.Event_ImageView_favorite),
                 childAtPosition(
                     childAtPosition(
-                        withId(R.id.Event_RecyclerView_event_list),
-                        1
+                        withClassName(`is`("androidx.cardview.widget.CardView")),
+                        0
                     ),
                     2
                 ),
@@ -62,6 +44,25 @@ class MainActivityTest {
             )
         )
         appCompatImageView.perform(click())
+
+        val appCompatImageView2 = onView(
+            allOf(
+                withId(R.id.Event_ImageView_image),
+                childAtPosition(
+                    childAtPosition(
+                        withClassName(`is`("androidx.cardview.widget.CardView")),
+                        0
+                    ),
+                    3
+                ),
+                isDisplayed()
+            )
+        )
+        appCompatImageView2.perform(click())
+
+        pressBack()
+
+        pressBack()
     }
 
     private fun childAtPosition(

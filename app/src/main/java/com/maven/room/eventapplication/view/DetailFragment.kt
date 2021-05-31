@@ -69,18 +69,4 @@ class DetailFragment : Fragment() {
             .load(eventImage)
             .into(binding.EventDetailImageViewEventImage)
     }
-
-    companion object {
-        @JvmStatic
-        fun newInstance(name: String, date: String, type: String, imageUrl: String) =
-            DetailFragment().apply {
-                arguments = Bundle().apply {
-                    putString(EVENT_NAME, name)
-                    putString(EVENT_DATE, date)
-                    putString(EVENT_TYPE, type)
-                    putString(EVENT_IMAGE_URL, imageUrl)
-                }
-            }
-    }
-
 }

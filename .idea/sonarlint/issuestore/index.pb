@@ -29,13 +29,7 @@ Fapp/src/main/java/com/maven/room/eventapplication/database/EventDao.kt,d\f\df9
 Kapp/src/main/java/com/maven/room/eventapplication/database/EventDatabase.kt,a\0\a06e1144192a415ca072f3c9f64fc11dbf11a304
 ‚
 Rapp/src/main/java/com/maven/room/eventapplication/repositories/EventsDataSource.kt,0\c\0c4fff6af0f128cc6f38e82e53927adb14fd34a3
-}
-Mapp/src/main/java/com/maven/room/eventapplication/database/EventRepository.kt,2\3\237d15963334a0645e9e71ef46bcf977febc7c26
-|
-Lapp/src/main/java/com/maven/room/eventapplication/database/EventViewModel.kt,f\2\f2d75b0edd7afe5afa7cda9c044264776b0b00da
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
-‚
-Rapp/src/main/java/com/maven/room/eventapplication/database/WordDatabaseCallback.kt,b\7\b71bdf1faa8901a496ace4e0ad575edc3fa7f4dc
 z
 Japp/src/main/java/com/maven/room/eventapplication/root/EventApplication.kt,4\f\4fbe42a5fcb32cce096a029e0b51324aad2e542e
